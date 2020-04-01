@@ -1,7 +1,11 @@
 $(".padrone").click(
-  function(){
-    $(".open").toggle().removeClass("open")
+  function () {
+  if ($(this).children().hasClass("open")) {
+    $(this).children().toggle().removeClass("open");
+  } else {
+    $(".open").toggle().removeClass("open");
     $(this).children().toggle().addClass("open");
+    }
   }
 )
 $(".fa-bars").click(
@@ -15,8 +19,12 @@ $(".fa-times").click(
   }
 )
 $(".allarga").click(
-  function(){
-    $(".open").toggle().removeClass("open")
+  function () {
+  if ($(this).children().hasClass("open")) {
+    $(this).children().slideToggle().removeClass("open");
+  } else {
+    $(".open").toggle().removeClass("open");
     $(this).children().slideToggle().addClass("open");
+    }
   }
 )
