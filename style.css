@@ -25,6 +25,7 @@ ul li{
 .sottomenu{
   display: none;
   position: absolute;
+  left: 0;
 }
 .sottomenu2{
   display: none;
