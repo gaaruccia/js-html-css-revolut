@@ -1,0 +1,20 @@
+$(".padrone").click(
+  function(){
+    $(this).children().toggle();
+  }
+)
+$(".fa-bars").click(
+  function(){
+    $('.hamburger-menu').show();
+  }
+)
+$(".fa-times").click(
+  function(){
+    $('.hamburger-menu').hide();
+  }
+)
+$(".allarga").click(
+  function(){
+    $(this).children().slideToggle();
+  }
+)
