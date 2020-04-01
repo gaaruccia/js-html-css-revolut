@@ -74,6 +74,9 @@ ul li{
   color: black;
   font-size: 35px;
   }
+.fadeIn{
+  display: block;
+}
 @media screen and (max-width: 1000px){
   .logo .inlinea ul{
     display: none;
@@ -90,5 +93,10 @@ ul li{
   }
   .sottomenu2{
     position: relative;
+  }
+}
+@media screen and (min-width: 1001px){
+  .fadeIn{
+    display: none;
   }
 }

@@ -1,20 +1,22 @@
 $(".padrone").click(
   function(){
-    $(this).children().toggle();
+    $(".open").toggle().removeClass("open")
+    $(this).children().toggle().addClass("open");
   }
 )
 $(".fa-bars").click(
   function(){
-    $('.hamburger-menu').show();
+    $('.hamburger-menu').addClass("fadeIn");
   }
 )
 $(".fa-times").click(
   function(){
-    $('.hamburger-menu').hide();
+    $('.hamburger-menu').removeClass("fadeIn");
   }
 )
 $(".allarga").click(
   function(){
-    $(this).children().slideToggle();
+    $(".open").toggle().removeClass("open")
+    $(this).children().slideToggle().addClass("open");
   }
 )
